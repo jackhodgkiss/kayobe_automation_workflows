@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "kayobe-automation-workflows"
+version = "0.1.0"
+description = "Ansible role for generating kayobe automation workflows for GitHub and GitLab."
+authors = ["Jack Hodgkiss <jack@stackhpc.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+ansible = "^7.0"
+
+[tool.poetry.group.dev.dependencies]
+ansible-lint = { version = "6.15.*", markers = "platform_system != 'Windows'" }
+pre-commit = "^3.2.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
